@@ -1,0 +1,13 @@
+// Faça um programa que receba dois números e exiba o resultado da sua soma.
+
+Console.Write("Informe um número: ");
+double num1 = double.Parse(Console.ReadLine());
+
+Console.Write("Informe o segundo número: ");
+double num2 = double.Parse(Console.ReadLine());
+
+double resultado = num1 + num2;
+
+Console.Write($"A soma de {num1} + {num2} = {resultado}");
+
+Console.ReadKey();
