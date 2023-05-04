@@ -1,0 +1,22 @@
+/* Escrever um programa que leia o nome de um aluno e as notas das três provas que ele obteve no semestre.
+               No final informar o nome do aluno e a sua média (aritimética). */
+
+            Console.WriteLine("### CALCULO DE MÉDIA DE ALUNO ### ");
+
+            Console.Write("\nInforme o nome do aluno: ");
+            string nome = Console.ReadLine();
+
+            Console.Write("\nInforme a nota da prova 1: ");
+            double p1 = double.Parse(Console.ReadLine());
+
+            Console.Write("\nInforme a nota da prova 2: ");
+            double p2 = double.Parse(Console.ReadLine());
+
+            Console.Write("\nInforme a nota da prova 3: ");
+            double p3 = double.Parse(Console.ReadLine());
+
+            double media = (p1 + p2 + p3) / 3;
+
+            Console.WriteLine($"\nO aluno {nome} teve média de {media:n2}");
+
+            Console.ReadKey();
