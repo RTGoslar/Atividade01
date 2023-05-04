@@ -1,0 +1,29 @@
+  /* Faça um programa que calcule a quaqntidade de litros dde combustìvel gasta em uma viagem, utilizando um automóvel que faz 12km por litro. Para obter o cálculo, o usario deve fornecer
+            o tempo gasto na viagem e a velocidade média durante ela. Desta forma, sera possivel obter a distancia percorrida com a formula DISTANICA = TEMPO * VELOCIDADE. Tendo o valor da distância, basta
+            calcular a quantidade de litros de combustivel utilizada na viagem com a formula :  LITROS_USADOS = DISTANCIA/12. O programa deve apresentar os valores da velocidade média, tempo gasto na viagem,
+             a distância percorrida e a quantidade de litros utilizadas na viagem.
+             */
+
+            Console.WriteLine("### Calculo para viagens ### \n");
+
+            Console.Write("Informe o tempo gasto para viagem: ");
+            double tempo = double.Parse(Console.ReadLine());
+
+
+            Console.Write("Infome a velocidade média (Kmh): ");
+            double velocidade = double.Parse(Console.ReadLine());
+
+            double distancia = tempo * velocidade;
+
+            double litros = distancia / 12;
+
+            // Valores da velocidade média
+            Console.WriteLine($"Velocidade média: {velocidade} Km/h\n");
+            // Tempo gasto na viagem
+            Console.WriteLine($"Tempo gasto na viagem: {tempo} H\n");
+            // Distância percorrida
+            Console.WriteLine($"Distância percorrida: {distancia} KM\n");
+            // Quantidade de litros de combustível
+            Console.WriteLine($"Quantidade de combustível usados: {litros} L");
+
+            Console.ReadKey();
