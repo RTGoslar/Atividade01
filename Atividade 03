@@ -1,0 +1,17 @@
+  /* Faça um progrma que:
+            Leia o nome;
+            Leia o sobrenome;
+            Concatene o nome com o sobrenome;
+            Apresente o nome completo. */
+
+            String nome, sobrenome;
+
+            Console.Write("Digite o seu nome: ");
+            nome = Console.ReadLine();
+
+            Console.Write("Digite o seu sobrenome: ");
+            sobrenome = Console.ReadLine();
+
+            Console.WriteLine($"\n{nome} {sobrenome}");
+
+            Console.ReadKey();
