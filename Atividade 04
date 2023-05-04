@@ -1,0 +1,21 @@
+  /* Escrever um programa que leia o nome de um vendedor, o seu sálario fixo e o total de vendas efetuadas por ele no mês ( em dinheiro).
+               Sabendo que este vendedor ganha 15% de comisão sobre suas vendas efetuadas, informar o seu nome, o salário fixo e o salário no final
+               do mês.
+             */
+
+            Console.WriteLine(" ### Salário de Colaborador ###");
+
+            Console.Write("\nInforme o nome do colaborador: ");
+            string t1 = Console.ReadLine();
+
+            Console.Write("\nInforme o salário fixo do colaborador R$: ");
+            double salario = double.Parse(Console.ReadLine());
+
+            Console.Write("\nInforme a venda mensal do colaborador R$: ");
+            double comissao = double.Parse(Console.ReadLine());
+
+            double salarioFinal = salario + comissao * 0.15;
+            
+            Console.WriteLine($"\nNome: {t1}\nSalário base: {salario:C}\nComissao: {comissao:C}\nTotal do Mês: {salarioFinal:C}");
+
+            Console.ReadKey();
