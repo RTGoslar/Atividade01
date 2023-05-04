@@ -1,0 +1,21 @@
+//Faça  um programa que receba dois números e ao final mostre a soma, subtração, multiplicação e a divisão dos números lidos.
+
+            Console.Write("Digite um número inteiro ou decimal: ");
+            double num1 = double.Parse(Console.ReadLine());
+
+            Console.Write("\nDigite um segundo número inteiro ou decimal: ");
+            double num2 = double.Parse(Console.ReadLine());
+
+            double soma = num1 + num2;
+            Console.Write($"\nA soma dos números {num1} + {num2} = {soma} ");
+
+            double dimi = num1 - num2;
+            Console.Write($"\nA diminuição dos números {num1} - {num2} = {dimi}");
+
+            double mult = num1 * num2;
+            Console.Write($"\nA multiplicação dos números {num1} x {num2} = {mult}");
+
+            double divi = num1 / num2;
+            Console.Write($"\nA divisão dos números {num1} / {num2} = {divi}");
+            
+            Console.ReadKey();
