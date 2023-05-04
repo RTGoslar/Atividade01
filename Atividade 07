@@ -1,0 +1,13 @@
+ /* Faça um programa que leia uma temperatura em graus celsius e apresente-a convertida em graus Fahrenheit. A fórmula de conversão é: F = (9*C+160)/5, na qual F é a temperatura em
+            Fahrenheit e C a temperatura em Celsius. */
+
+            Console.WriteLine(" Converter temperatura Celsius em Fahrenheit\n");
+
+            Console.Write("Informe a temperatura em graus Celsius: ");
+            double c = double.Parse(Console.ReadLine());
+
+            double f = (9 * c + 160) / 5;
+
+            Console.Write($"\nTemperatura em Fahrenheit: {f}");
+
+            Console.ReadKey();
