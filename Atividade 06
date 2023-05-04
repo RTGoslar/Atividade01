@@ -1,0 +1,33 @@
+/* Faça um programa que:
+             a) Obtenha o valor para a variável HT (horas trabalhadas no mês);
+             b) Obtenha o valor para a variável VH (valor hora trabalhada);
+             c) Obtenha o valor para a variável PD (percentual de desconto);
+             d) Calcule o salário bruto => SB = HT * VH;
+             e) Calcule o total de desconto => TD = (PD/100)*SB;
+             f) Calcule o salário líquido => SL = SB - TD;
+             g) Apresente os valores de: Horas trabalhadas, Salário Bruto, Desconto,Salário Liquido.
+             */
+
+
+            Console.WriteLine(" ### CALCULO DE PAGAMENTO ### " + '\n');
+
+            Console.Write("Informe as horas trabalhadas do mês: ");
+            double ht = double.Parse(Console.ReadLine());
+
+            Console.Write("Informe o valor de hora trabalhada R$: ");
+            double vh = double.Parse(Console.ReadLine());
+
+            Console.Write("Informe o percentual de desconto: ");
+            double pd = double.Parse(Console.ReadLine());
+
+            double sb = ht * vh;
+            double td = (pd / 100) * sb;
+            double sl = sb - td;
+
+
+            Console.Write($"\nHoras Trabalhadas: {ht}H\n");
+            Console.Write($"Salário Bruto: {sb:C}\n");
+            Console.Write($"Desconto: {td:C}\n");
+            Console.Write($"Salário Liquido: {sl:C}\n");
+
+            Console.ReadKey();
